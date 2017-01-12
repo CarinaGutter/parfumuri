@@ -9,8 +9,11 @@ Utilizatorii sunt angajatii unei firme.
 
 In meniul aplicatiei se va putea:
 
--Introducere un nou parfum.
--Introducere un nou brand.
--Vizualizarea parfumurilor disponibile si a brand-urilor din care fac parte.
--Stergere parfum.
+Introduce un nou parfum
+
+Introduce un nou brand
+
+Vizualiza parfumurile disponibile si brand-urile din care fac parte.
+
+Sterge parfum.
 
