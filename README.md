@@ -1,22 +1,16 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
 
+## WebTech Project
 
-Welcome to your Node.js project on Cloud9 IDE!
+Problema de rezolvat:
+Un site in care fiecare vanzator sa isi poata gestiona parfumurile vandute si brand-urile acestora.
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+Utilizatorii sunt angajatii unei firme.
 
-## Running the server
+In meniul aplicatiei se va putea:
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+-Introducere un nou parfum.
+-Introducere un nou brand.
+-Vizualizarea parfumurilor disponibile si a brand-urilor din care fac parte.
+-Stergere parfum.
 
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.

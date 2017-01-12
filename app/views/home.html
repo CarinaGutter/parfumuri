@@ -1,0 +1,47 @@
+<div>
+  Brand number:{{brand.id}}
+      <h2>List of perfumes</h2>
+    <table class="table table-striped">
+        <tr ng-repeat="perfumes in perfumes" ng-include="getTemplate(perfume)">
+            <button value="details" ui-sref="perfumeDetails({id : perfume.id})"></button> 
+        </tr>
+    
+    </table>
+    <h2>Add a perfume</h2>
+    <form name="addForm">
+        <label for="perfume_name">Perfume Name</label>
+        <input type="text" id="perfume_name" ng-model="perfume.perfume_name" />
+        
+        <label for="category">Category</label>
+        <input type="text" id="category" ng-model="perfume.category"  />
+        
+        <label for="year">Year</label>
+        <input type="text" id="year"  ng-model="perfume.year" />
+       
+        
+        <input type="button" value="Add" ng-click="addperfume(perfume)" />
+        
+    </form>
+    
+    <script type="text/ng-template" id="display">
+        <td>{{perfume.perfume_name}}</td>
+        <td>{{perfume.category}}</td>
+        <td>{{prisoner.year}}</td>
+        
+        <td>
+            <input type="button" value="Delete" ng-click="deleteperfume(perfume)"/>
+            <input type="button" value="Edit" ng-click="editperfume(perfume)" />
+        </td>
+    </script>
+    
+    <script type="text/ng-template" id="edit">
+        <td><input type="text" ng-model="perfume.perfume_name"/></td>
+        <td><input type="text" ng-model="perfume.category" /></td>
+        <td><input type="text" ng-model="perfume.year"/></td>
+        <td>
+            <input type="button" value="Update" ng-click="saveperfume(perfume)" />
+            <input type="button" value="Cancel" ng-click="cancelEditing()" />
+        </td>
+    </script>
+  <a ui-sref="brands">Back</a>
+</div>
